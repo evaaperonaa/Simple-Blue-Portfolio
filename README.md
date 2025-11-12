@@ -1,7 +1,5 @@
 # 🌊 Evly's Portfolio (In Progress)
 
----
-
 ## 🌀 Overview  
 
 Welcome to my personal **portfolio project**, built around a clean and modern **blue color palette**.  
