@@ -14,3 +14,5 @@ toggleToSocials.addEventListener('click', () => {
     emailSection.classList.remove('active');
     socialsSection.classList.add('active');
 });
+
+

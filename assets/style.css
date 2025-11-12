@@ -365,3 +365,127 @@ form {
     font-size: 14.5px;
     margin: 15px 0;
 }
+/* ---------------------- About Page Visual ---------------------- */
+.about-main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* HERO AREA */
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(177, 203, 252, 0.4);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.about-text h1 span {
+    color: #B1CBFC;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-style: normal;
+}
+
+/* DIVIDER */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+/* SKILLS GRID */
+.skills-section h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.skills-grid.visual {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #B1CBFC;
+}
+
+.skill-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+/* GOALS & PERSONAL SECTIONS */
+.goals-section, .personal-section {
+    text-align: center;
+}
+
+.goals-section h2, .personal-section h2 {
+    margin-bottom: 15px;
+}
+
+/* ---------------------- Scroll Animations ---------------------- */
+.fade-in, .fade-in-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible, .fade-in-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------------------- Responsive ---------------------- */
+@media screen and (max-width: 720px){
+    .about-hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .about-image img {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .about-text h1 {
+        font-size: 32px;
+    }
+}
+
+

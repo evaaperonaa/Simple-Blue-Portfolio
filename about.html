@@ -1,30 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title> About | Evly </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/assets/style.css">
+<title>About | Evly</title>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a2e0a6f4a4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="glass-container">
-            <nav class="navbar">
-                <div class="logo"><a href="#"> Evly </a></div>
-                <ul class="nav-links">
-                    <li class="nav-link"><a href="index.html"> Home </a></li>
-                    <li class="nav-link"><a href="about.html"> About </a></li>
-                    <li class="nav-link"><a href="contact.html"> Contact </a></li>
-                </ul>
-            </nav>
-            <div class="content">
-                <div class="main">
-                    
-                    <button> Get Started </button>
-                </div>
-                
-            </div>
-        </div>
+
+<!-- Particles -->
+<div class="particles">
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<div class="container">
+  <div class="glass-container">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo"><a href="#">Evly</a></div>
+      <ul class="nav-links">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="about.html" class="active">About</a></li>
+        <li class="nav-link"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="content about">
+      <div class="main about-main">
+
+        <!-- HERO AREA -->
+        <section class="about-hero fade-in">
+          <div class="about-image">
+            <img src="your-photo.jpg" alt="Evly portrait">
+          </div>
+          <div class="about-text">
+            <h1>Hi, I'm <span>Eva</span> 👋</h1>
+            <p>
+              A <strong>Programming and Cybersecurity</strong> student passionate about web design, ethical hacking and .
+            </p>
+            <p>
+              I enjoy blending logic with creativity — from writing efficient code to exploring cybersecurity challenges.
+            </p>
+          </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- SKILLS GRID -->
+        <section class="skills-section fade-in">
+          <h2>Technical Skills</h2>
+          <div class="skills-grid visual">
+            <div class="skill-card fade-in-card"><i class="fa-solid fa-code"></i><p>HTML / CSS / JavaScript</p></div>
+            <div class="skill-card fade-in-card"><i class="fa-brands fa-python"></i><p>Python & C++</p></div>
+            <div class="skill-card fade-in-card"><i class="fa-solid fa-shield-halved"></i><p>Network Security</p></div>
+            <div class="skill-card fade-in-card"><i class="fa-brands fa-linux"></i><p>Linux & Cloud</p></div>
+            <div class="skill-card fade-in-card"><i class="fa-solid fa-brain"></i><p>Problem Solving</p></div>
+          </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- GOALS -->
+        <section class="goals-section fade-in">
+          <h2>My Goals</h2>
+          <p>
+            My ambition is to grow as a <strong>cybersecurity analyst or developer</strong>, creating technology that’s both innovative and secure.  
+            I aim to keep learning, stay curious, and collaborate on projects that matter.
+          </p>
+        </section>
+
+        <hr class="divider">
+
+        <!-- PERSONAL -->
+        <section class="personal-section fade-in">
+          <h2>Beyond Code</h2>
+          <p>
+            Outside of programming, I’m driven by storytelling, design, and digital creativity.  
+            I see technology as a way to connect ideas, protect people, and inspire change.
+          </p>
+        </section>
+
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="/assets/about.js">
+
+</script>
+
 </body>
 </html>
