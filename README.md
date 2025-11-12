@@ -1,5 +1,4 @@
 # 🌊 Evly's Portfolio (In Progress)
-### Personal portfolio showcasing programming and cybersecurity projects.
 
 ---
 
