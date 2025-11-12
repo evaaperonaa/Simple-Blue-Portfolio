@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    color: #fff;
+    background-color: #b3e5fc;
+    background-image:
+        radial-gradient(at 9% 89%, hsla(210, 90%, 75%, 1) 0px, transparent 60%),
+        radial-gradient(at 72% 6%, hsla(220, 80%, 65%, 1) 0px, transparent 60%),
+        radial-gradient(at 24% 19%, hsla(195, 100%, 82%, 1) 0px, transparent 60%),
+        radial-gradient(at 65% 6%, hsla(240, 70%, 68%, 1) 0px, transparent 60%),
+        radial-gradient(at 20% 98%, hsla(255, 80%, 75%, 1) 0px, transparent 60%), 
+        radial-gradient(at 44% 9%, hsla(260, 65%, 70%, 1) 0px, transparent 60%), 
+        radial-gradient(at 80% 80%, hsla(200, 90%, 70%, 1) 0px, transparent 60%),
+        radial-gradient(at 10% 9%, hsla(280, 70%, 65%, 1) 0px, transparent 60%);
+    min-height: 100vh;  
+}
+
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.glass-container{
+    display: block;
+    max-width: 72vw;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.56);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+}
+
+
+.logo{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+
+ul.nav-links{
+    margin: 0;
+    float: right;
+    display: flex;
+    list-style: none;
+}
+
+
+li.nav-link{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+
+.content{
+    display: flex;
+    width: 100%;
+}
+
+
+.main{
+    margin-top: 10vh;
+    display: inline-block;
+    padding: 20px;
+}
+
+
+.main h2{
+    font-size: 35px;
+}
+
+
+.main p{
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+
+button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+button:hover{
+    border-color: #B1CBFC;
+    background-color: #B1CBFC;
+}
+
+
+.image-wrapper{
+    display: flex;
+    margin-top: 5vh;
+    position: relative;
+}
+
+
+.image-wrapper img{
+    max-width: 500px;
+}
+
+
+.attrebute{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 1075px){
+    .content{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 720px){
+    .logo{
+        font-size: 22px;
+    }
+    li.nav-link{
+        font-size: 13px;
+    }
+    .main h2{
+        font-size: 28px;
+    }
+    .main p{
+        font-size: 15px;
+    }
+    button{
+        font-size: 13px;
+    }
+    .image-wrapper img{
+        max-width: 400px;
+    }
+}
+
+/* CONTACT */
+
+.body.contacto {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: 400% 400%;
+}
+
+.contact {
+    position: relative;
+    width: 850px;
+    height: 550px;
+    border-radius: 30px;
+    margin: 20px;
+    overflow: hidden;
+    align-items: center;
+    /* background: rgba(177, 203, 252, 0.1); */ /* Removido para que sea transparente y el form-box maneje el vidrio */
+    justify-content: center;
+}
+
+.form-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.56); */ /* Quitado para transparencia total */
+    /* backdrop-filter: blur(11.6px); */ /* Quitado */
+    /* -webkit-backdrop-filter: blur(11.6px); */ /* Quitado */
+    display: flex;
+    flex-direction: column; /* Apila elementos verticalmente por defecto */
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    z-index: 1;
+    opacity: 0; /* Inicialmente oculto */
+    pointer-events: none; /* Evita interacciones cuando oculto */
+    transition: opacity 0.5s ease-in-out; /* Transición de fade suave */
+}
+
+.form-box.active {
+    opacity: 1; /* Visible cuando activo */
+    pointer-events: auto; /* Permite interacciones */
+}
+
+/* Específico para socials: asegura que los enlaces estén verticales */
+.socials .social-links {
+    display: flex;
+    flex-direction: column; /* Apila enlaces verticalmente */
+    gap: 10px; /* Espacio entre enlaces */
+    margin: 20px 0;
+    
+}
+
+.socials .social-links a {
+    display: flex;              /* flex normal (no inline) para controlar mejor */
+    align-items: center;        /* centra verticalmente icono + texto */
+    gap: 8px;                   /* espacio entre icono y texto (alternativa a margin-right) */
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.socials .social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.socials .social-links a i {
+    margin-right: 8px;
+    font-size: 18px; /* opcional, ajusta el tamaño si se ve muy pequeño */
+    vertical-align: middle; /* ayuda extra para mantener el centrado */
+}
+
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h1, .contact h2, .contact h3 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.contact h3 {
+    font-size: 24px;
+}
+
+.input-box {
+    position: relative;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.input-box input, .input-box textarea {
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    background: #eee;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-box textarea {
+    resize: none;
+}
+
+.input-box input::placeholder, .input-box textarea::placeholder {
+    color: #888;
+    font-weight: 400;
+}
+
+.input-box input:focus, .input-box textarea:focus {
+    outline: 2px solid #B1CBFC; /* Borde azul claro en focus para combinar con el tema */
+    box-shadow: 0 0 5px rgba(177, 203, 252, 0.5); /* Sombra azul suave */
+    transition: 0.3s;
+}
+
+.input-box i {
+    color: #333;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.submit, .btn {
+    width: 60%; /* Más pequeño: no ocupa toda la anchura */
+    height: 40px; /* Más compacto */
+    background-color: transparent; /* Transparente como tus botones generales */
+    border: 1px solid #fff; /* Borde blanco */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px; /* Menos espacio arriba */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.btn:hover, .submit:hover {
+    border-color: #B1CBFC; /* Hover igual que tus botones generales */
+    background-color: #B1CBFC;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: auto;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background: none;         /* 👈 elimina cualquier fondo */
+    color: inherit;
+    cursor: pointer;
+    box-shadow: none;         /* 👈 elimina la línea o sombra */
+}
+
+/* 👇 asegura que no cambie en ningún estado */
+.back-btn:hover,
+.back-btn:focus,
+.back-btn:active {
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    color: inherit;
+}
+
+
+.back-btn i {
+    margin-right: 5px; /* Espacio entre ícono y texto */
+}
+
+.contact p {
+    font-size: 14.5px;
+    margin: 15px 0;
+}
